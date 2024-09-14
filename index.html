@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Ordens de Serviço</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5 text-center">
+        <img src="logo.png" alt="Logo" id="logo" class="mb-4">
+        <h1 class="text-center">Relatório de Ordens de Serviço</h1>
+        <form id="reportForm">
+            <div class="form-group">
+                <label for="unidade">Unidade</label>
+                <select id="unidade" class="form-control">
+                    <option>Bangu</option>
+                    <option>Botafogo</option>
+                    <option>Campinho</option>
+                    <option>Campo Grande</option>
+                    <option>Carioca</option>
+                    <option>Catete</option>
+                    <option>Centro</option>
+                    <option>Copacabana</option>
+                    <option>Grande Rio</option>
+                    <option>Ilha</option>
+                    <option>Jacarepaguá</option>
+                    <option>Madureira</option>
+                    <option>Niterói</option>
+                    <option>Norte Shopping</option>
+                    <option>Ramos</option>
+                    <option>Recreio</option>
+                    <option>Santa Cruz</option>
+                    <option>São Cristovão</option>
+                    <option>São Gonçalo</option>
+                    <option>Caxias</option>
+                    <option>Tijuca</option>
+                    <option>Tijuca Major Ávila</option>
+                    <option>Barra</option>
+                    <option>Meier</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tecnico">Nome do Técnico</label>
+                <input type="text" id="tecnico" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <p><label for="data">Data:</label>
+                    <input type="text" id="data" name="data" placeholder="dd/mm/yyyy" required pattern="\d{2}/\d{2}/\d{4}"></p> 
+            </div>
+            <div class="form-group">
+                <label for="custos">Custos</label>
+                <input type="text" id="custos" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="chegada">Horário de Chegada</label>
+                <input type="time" id="chegada" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="saida">Horário de Saída</label>
+                <input type="time" id="saida" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="responsavel">Responsável pela Unidade</label>
+                <input type="text" id="responsavel" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="feito">O que foi feito</label>
+                <textarea id="feito" class="form-control" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="pendente">Pendências</label>
+                <textarea id="pendente" class="form-control" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Gerar Relatório</button>
+        </form>
+        <hr>
+        <div id="report" class="mt-5"></div>
+        <button id="copyButton" class="btn btn-secondary btn-block">Copiar Relatório</button>
+        <footer class="mt-5">
+            <p>Feito por Samuel Ataliba</p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

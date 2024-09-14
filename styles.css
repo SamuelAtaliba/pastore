@@ -1,0 +1,45 @@
+body {
+  background-color: #000;
+  color: #bbb;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 600px;
+}
+
+.form-control, .btn {
+  border-radius: 8px;
+  background-color: #333;
+  color: #bbb;
+  border: none;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+#report {
+  background: #111;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  color: #bbb;
+}
+
+#copyButton {
+  background-color: #444;
+  color: #bbb;
+  border: none;
+}
+
+footer {
+  margin-top: 50px;
+  color: #bbb;
+}
+
+#logo {
+  width: 100px;
+  height: auto;
+}
